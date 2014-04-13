@@ -65,4 +65,4 @@ production:
   <<: *default
   database: HY-Service-Directory_production
   username: HY-Service-Directory
-  password: <%= ENV['HY-SERVICE-DIRECTORY_DATABASE_PASSWORD'] %>
+  password: <%= ENV['HY_SERVICE_DIRECTORY_DATABASE_PASSWORD'] %>
