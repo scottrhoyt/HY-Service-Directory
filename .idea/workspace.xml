@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="335bccb8-193e-4b07-9770-d7768da3373c" name="Default" comment="Initial commit&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413215723_create_service_types.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413223004_create_service_providers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413223653_create_service_providers_service_types.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/service_provider.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/service_providers_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/service_type.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/service_types_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="335bccb8-193e-4b07-9770-d7768da3373c" name="Default" comment="Created Initial Models.&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/service_provider_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/service_providers.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/service_providers.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/service_providers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/service_providers_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/service_providers_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/service_providers_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/service_type_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/service_types.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/service_types.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/service_types.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/service_types_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/service_types_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/helpers/service_types_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_providers/show.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/service_types/show.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HY-Service-Directory.iws" />
@@ -66,7 +86,7 @@
       <file leaf-file-name="service_provider.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/service_provider.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="40" selection-start="83" selection-end="83" vertical-scroll-proportion="0.032327585" vertical-offset="0" max-vertical-offset="464">
+            <state line="3" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.09698276" vertical-offset="0" max-vertical-offset="464">
               <folding />
             </state>
           </provider>
@@ -221,6 +241,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -237,6 +261,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HY-Service-Directory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HY-Service-Directory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,18 +512,24 @@
       <created>1397424169074</created>
       <updated>1397424169074</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created Initial Models.">
+      <created>1397430169567</created>
+      <updated>1397430169567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="22" width="1400" height="811" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294271" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294271" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -512,6 +556,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Created Initial Models." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Initial Models." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -561,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/service_provider.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="40" selection-start="83" selection-end="83" vertical-scroll-proportion="0.032327585" vertical-offset="0" max-vertical-offset="464">
+        <state line="3" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.09698276" vertical-offset="0" max-vertical-offset="464">
           <folding />
         </state>
       </provider>

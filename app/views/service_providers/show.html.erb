@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @service_provider.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @service_provider.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @service_provider.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @service_provider.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @service_provider.zipcode %>
+</p>
+
+<p>
+  <strong>Lattitude:</strong>
+  <%= @service_provider.lattitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @service_provider.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_service_provider_path(@service_provider) %> |
+<%= link_to 'Back', service_providers_path %>
