@@ -2,16 +2,15 @@
 <html>
 <head>
   <title>HYServiceDirectory</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, id: 'flash_#name' %>
-  <% end %>
+<div id="container">
+  <%- flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, id: "flash_#{name}" if msg.is_a?(String) %>
+  <%- end -%>
   <div id="user_header">
     <% if user_signed_in? %>
         Logged in as <%= current_user.email %>.
@@ -21,7 +20,7 @@
         <%= link_to "Log In", new_user_session_path %>
     <% end %>
   </div>
-<%= yield %>
-
+  <%= yield %>
+</div>
 </body>
 </html>
