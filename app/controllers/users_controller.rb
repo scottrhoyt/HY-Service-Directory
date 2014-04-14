@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
+    #respond_to do |format|
       if @user.save
         #format.html { redirect_to @service_type, notice: 'Service type was successfully created.' }
         #format.json { render :show, status: :created, location: @service_type }
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
         #format.json { render json: @service_type.errors, status: :unprocessable_entity }
         render 'new'
       end
-    end
+    #end
   end
 
   private
