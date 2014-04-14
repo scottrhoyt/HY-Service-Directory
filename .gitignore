@@ -14,3 +14,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+.idea/runConfigurations/Development__HY_Service_Directory.xml
+.idea/runConfigurations/Production__HY_Service_Directory.xml
+.idea/runConfigurations/spec__HY_Service_Directory.xml
+.idea/runConfigurations/test__HY_Service_Directory.xml
+.idea/workspace.xml
