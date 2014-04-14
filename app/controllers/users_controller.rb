@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       if @user.save
         #format.html { redirect_to @service_type, notice: 'Service type was successfully created.' }
         #format.json { render :show, status: :created, location: @service_type }
+        session[:user_id] = @user.id
         redirect_to root_url, notice: 'Thank you for signing up!'
       else
         #format.html { render :new }

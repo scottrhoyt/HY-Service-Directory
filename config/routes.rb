@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
   resource :sessions
-
   resources :users
-
   resources :service_providers
-
   resources :service_types
 
   root 'service_providers#index'
