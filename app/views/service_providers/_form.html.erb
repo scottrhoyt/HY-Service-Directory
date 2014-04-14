@@ -43,12 +43,13 @@
     <%= f.label :longitude %><br>
     <%= f.text_field :longitude %>
   </div>
-  <% for service_type in ServiceType.all %>
-    <div>
-      <%= check_box_tag "service_provider[service_type_ids][]", service_type.id, @service_provider.service_types.include?(service_type) %>
-      <%= service_type.name %>
-    </div>
-  <% end %>
+  <div class="field">
+    <%= hidden_field_tag "service_provider[service_type_ids][]", nil%>
+    <% ServiceType.all.each do |service_type| %>
+        <%= check_box_tag "service_provider[service_type_ids][]", service_type.id, @service_provider.service_type_ids.include?(service_type.id) %>
+        <%= service_type.name %><br/>
+    <% end %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
