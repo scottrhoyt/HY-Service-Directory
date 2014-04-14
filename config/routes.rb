@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resource :sessions
+
   resources :users
 
   resources :service_providers
