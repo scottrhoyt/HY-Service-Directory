@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Phone</th>
       <th>Address</th>
       <th>City</th>
       <th>State</th>
@@ -18,11 +19,12 @@
     <% @service_providers.each do |service_provider| %>
       <tr>
         <td><%= service_provider.name %></td>
+        <td><%= service_provider.phone %></td>
         <td><%= service_provider.address %></td>
         <td><%= service_provider.city %></td>
         <td><%= service_provider.state %></td>
         <td><%= service_provider.zipcode %></td>
-        <td><%= service_provider.lattitude %></td>
+        <td><%= service_provider.latitude %></td>
         <td><%= service_provider.longitude %></td>
         <td><%= link_to 'Show', service_provider %></td>
         <td><%= link_to 'Edit', edit_service_provider_path(service_provider) %></td>
