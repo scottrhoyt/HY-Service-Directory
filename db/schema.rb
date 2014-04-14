@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140413223653) do
+ActiveRecord::Schema.define(version: 20140413235007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,13 +28,13 @@ ActiveRecord::Schema.define(version: 20140413223653) do
     t.datetime "updated_at"
   end
 
-  create_table "service_providers_service_types", id: false, force: true do |t|
+  create_table "service_providers_types", id: false, force: true do |t|
     t.integer "service_provider_id"
     t.integer "service_type_id"
   end
 
-  add_index "service_providers_service_types", ["service_provider_id", "service_type_id"], name: "by_service_provider_service_type", using: :btree
-  add_index "service_providers_service_types", ["service_type_id"], name: "by_service_type", using: :btree
+  add_index "service_providers_types", ["service_provider_id", "service_type_id"], name: "by_service_provider_service_type", using: :btree
+  add_index "service_providers_types", ["service_type_id"], name: "by_service_type", using: :btree
 
   create_table "service_types", force: true do |t|
     t.string   "name"
