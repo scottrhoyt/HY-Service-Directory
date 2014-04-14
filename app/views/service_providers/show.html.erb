@@ -1,44 +1,35 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = ServiceProvider -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @service_provider.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @service_provider.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
+  <dd><%= @service_provider.address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+  <dd><%= @service_provider.city %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:state) %>:</strong></dt>
+  <dd><%= @service_provider.state %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:zipcode) %>:</strong></dt>
+  <dd><%= @service_provider.zipcode %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:latitude) %>:</strong></dt>
+  <dd><%= @service_provider.latitude %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:longitude) %>:</strong></dt>
+  <dd><%= @service_provider.longitude %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
+  <dd><%= @service_provider.phone %></dd>
+</dl>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @service_provider.phone %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @service_provider.address %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @service_provider.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @service_provider.state %>
-</p>
-
-<p>
-  <strong>Zipcode:</strong>
-  <%= @service_provider.zipcode %>
-</p>
-
-<p>
-  <strong>Latitude:</strong>
-  <%= @service_provider.latitude %>
-</p>
-
-<p>
-  <strong>Longitude:</strong>
-  <%= @service_provider.longitude %>
-</p>
-
-<%= link_to 'Edit', edit_service_provider_path(@service_provider) %> |
-<%= link_to 'Back', service_providers_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              service_providers_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_service_provider_path(@service_provider), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              service_provider_path(@service_provider),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

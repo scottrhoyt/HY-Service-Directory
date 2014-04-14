@@ -1,56 +1,20 @@
-<%= form_for(@service_provider) do |f| %>
-  <% if @service_provider.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@service_provider.errors.count, "error") %> prohibited this service_provider from being saved:</h2>
-
-      <ul>
-      <% @service_provider.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+<%= simple_form_for @service_provider, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <%= f.input :zipcode %>
+  <%= f.input :latitude %>
+  <%= f.input :longitude %>
+  <%= f.input :phone %>
+  <%= hidden_field_tag "service_provider[service_type_ids][]", nil%>
+  <% ServiceType.all.each do |service_type| %>
+      <%= check_box_tag "service_provider[service_type_ids][]", service_type.id, @service_provider.service_type_ids.include?(service_type.id), id: dom_id(service_type) %>
+      <%= label_tag dom_id(service_type), service_type.name %><br/>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :state %><br>
-    <%= f.text_field :state %>
-  </div>
-  <div class="field">
-    <%= f.label :zipcode %><br>
-    <%= f.text_field :zipcode %>
-  </div>
-  <div class="field">
-    <%= f.label :latitude %><br>
-    <%= f.text_field :latitude %>
-  </div>
-  <div class="field">
-    <%= f.label :longitude %><br>
-    <%= f.text_field :longitude %>
-  </div>
-  <div class="field">
-    <%= hidden_field_tag "service_provider[service_type_ids][]", nil%>
-    <% ServiceType.all.each do |service_type| %>
-        <%= check_box_tag "service_provider[service_type_ids][]", service_type.id, @service_provider.service_type_ids.include?(service_type.id), id: dom_id(service_type) %>
-        <%= label_tag dom_id(service_type), service_type.name %><br/>
-    <% end %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                service_providers_path, :class => 'btn' %>
   </div>
 <% end %>
