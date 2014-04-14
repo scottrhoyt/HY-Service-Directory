@@ -46,8 +46,8 @@
   <div class="field">
     <%= hidden_field_tag "service_provider[service_type_ids][]", nil%>
     <% ServiceType.all.each do |service_type| %>
-        <%= check_box_tag "service_provider[service_type_ids][]", service_type.id, @service_provider.service_type_ids.include?(service_type.id) %>
-        <%= service_type.name %><br/>
+        <%= check_box_tag "service_provider[service_type_ids][]", service_type.id, @service_provider.service_type_ids.include?(service_type.id), id: dom_id(service_type) %>
+        <%= label_tag dom_id(service_type), service_type.name %><br/>
     <% end %>
   </div>
   <div class="actions">
