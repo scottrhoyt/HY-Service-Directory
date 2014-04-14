@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="335bccb8-193e-4b07-9770-d7768da3373c" name="Default" comment="Added View Files.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140413235007_create_service_providers_types.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140413223653_create_service_providers_service_types.rb" afterPath="" />
+    <list default="true" id="335bccb8-193e-4b07-9770-d7768da3373c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140414001926_fix_service_provider_latitude_column_name.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/service_providers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/service_providers/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/service_providers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/service_providers_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/service_providers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/service_providers/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HY-Service-Directory.iws" />
@@ -66,19 +66,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/service_providers/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="10" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-14.583333" vertical-offset="325" max-vertical-offset="855">
+            <state line="35" column="24" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5076142" vertical-offset="325" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service_providers_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="service_providers_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/service_providers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.8060345" vertical-offset="736" max-vertical-offset="1200">
+            <state line="73" column="3" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1200">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/service_providers/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="26" selection-start="442" selection-end="442" vertical-scroll-proportion="-8.75" vertical-offset="225" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140414001926_fix_service_provider_latitude_column_name.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140414001926_fix_service_provider_latitude_column_name.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="5" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -125,8 +143,10 @@
         <option value="$PROJECT_DIR$/app/models/service_type.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140413223653_create_service_providers_service_types.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140413235007_create_service_providers_types.rb" />
-        <option value="$PROJECT_DIR$/app/views/service_providers/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140414001926_fix_service_provider_latitude_column_name.rb" />
         <option value="$PROJECT_DIR$/app/controllers/service_providers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/service_providers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/service_providers/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -378,6 +398,37 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -399,6 +450,33 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
     <configuration default="false" name="test: HY-Service-Directory" type="RakeRunConfigurationType" factoryName="Rake">
@@ -542,7 +620,11 @@
       <created>1397431235922</created>
       <updated>1397431235922</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Squashed bugs.">
+      <created>1397434356461</created>
+      <updated>1397434356461</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -584,7 +666,8 @@
     </option>
     <MESSAGE value="Created Initial Models." />
     <MESSAGE value="Added View Files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added View Files." />
+    <MESSAGE value="Squashed bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Squashed bugs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -632,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/service_providers/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="10" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-14.583333" vertical-offset="325" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/service_type.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -646,9 +722,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140414001926_fix_service_provider_latitude_column_name.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="5" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/service_providers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.8060345" vertical-offset="736" max-vertical-offset="1200">
+        <state line="73" column="3" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/service_providers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="26" selection-start="442" selection-end="442" vertical-scroll-proportion="-8.75" vertical-offset="225" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/service_providers/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="24" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5076142" vertical-offset="325" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
