@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+
   resources :service_providers
 
   resources :service_types
