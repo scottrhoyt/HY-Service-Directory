@@ -34,4 +34,8 @@ gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Bootstrap
+gem 'twitter-bootstrap-rails'
+gem 'simple_form'
+gem 'less-rails-bootstrap'
 
